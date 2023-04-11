@@ -1,0 +1,20 @@
+
+
+.V_function{
+    color: white;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: fit-content;
+}
+
+.I_function{
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    background-color: transparent;
+    outline: 0;
+    border: 0;
+    width: 100%;
+}
