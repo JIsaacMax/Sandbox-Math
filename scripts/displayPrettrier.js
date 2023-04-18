@@ -11,10 +11,12 @@ function mousemove(e) {
 }
 
 function_I.addEventListener("input", function () {
-    let baskValues = function_I.value.split(",");
-    let {x,y,z} = {x: parseInt(baskValues[0]), y: baskValues[1], z: baskValues[2]};
-    if(baskValues.length > 3){
-        let baskResult = bascara(x, y, z);
-        say(baskResult);
-    }
+    functionVector.forEach(() => functionVector.pop());
+    var xValue = 0;
+    do{
+    var yValue = personalFunction(xValue);
+    functionVector.push({x: xValue, y: (yValue)});
+    say(`x: ${xValue} y: ${yValue}`);
+    xValue+=1;
+    }while(yValue < halfHeight);
 });
